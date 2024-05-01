@@ -1,22 +1,27 @@
 body {
     font-family: Arial, sans-serif;
+    color: #ffffff;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-image: url('bg.jpg');
+    background-size: cover; /* This will ensure the image covers the entire background */
 }
 
 .container {
     max-width: 600px;
     margin: 100px auto;
     padding: 20px;
-    background-color: #fff;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: rgba(0, 0, 0, 0.612); /* Use rgba for transparency */
+    border-radius: 20px;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37); /* Add a soft shadow */
+    backdrop-filter: blur(10px); /* Apply backdrop filter for glassy effect */
+    -webkit-backdrop-filter: blur(10px); /* For Safari */
+    border: 1px solid rgba(255, 255, 255, 0.18); /* Add a subtle border */
 }
 
 h1 {
     text-align: center;
-    color: #333;
+    color: #ffffff;
 }
 
 form {
@@ -41,6 +46,7 @@ select {
 button {
     width: 100%;
     padding: 10px;
+    font-size: large;
     background-color: #007bff;
     color: #fff;
     border: none;
@@ -49,5 +55,5 @@ button {
 }
 
 button:hover {
-    background-color: #0056b3;
+    background-color: #0970df;
 }
