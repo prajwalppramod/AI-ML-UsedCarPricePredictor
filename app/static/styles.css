@@ -11,12 +11,18 @@ body {
     max-width: 600px;
     margin: 100px auto;
     padding: 20px;
+    padding-bottom: 0px;
     background-color: rgba(0, 0, 0, 0.612); /* Use rgba for transparency */
     border-radius: 20px;
     box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37); /* Add a soft shadow */
     backdrop-filter: blur(10px); /* Apply backdrop filter for glassy effect */
     -webkit-backdrop-filter: blur(10px); /* For Safari */
     border: 1px solid rgba(255, 255, 255, 0.18); /* Add a subtle border */
+}
+
+.result{
+    font-size: x-large;
+    text-align: center;
 }
 
 h1 {
@@ -56,4 +62,26 @@ button {
 
 button:hover {
     background-color: #0970df;
+}
+.made-by {
+    font-size: 14px;
+    color: #ffffff;
+    margin-top: 50px; /* Add margin for spacing */
+  }
+  
+  .author {
+    font-size: 18px;
+    color: #ffffff;
+    font-weight: bold;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+  #element{
+    color: #ffffff;
+  }
+  .credits {
+    text-align: center; /* Align text/content horizontally */
+    position: relative; /* Position the div */
+    left: 50%; /* Move the left edge of the element to the middle of the parent */
+    transform: translate(-50%, -50%); /* Move the element back up and left by half of its width and height */
 }

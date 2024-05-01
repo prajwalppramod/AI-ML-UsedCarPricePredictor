@@ -14,7 +14,20 @@
         <div class="result">
             <p>Predicted Price: {{ price }} Lakhs</p>  <!-- Change predicted_price to price -->
         </div>
+        <div class="credits">
+            <div class="made-by">Made by</div>
+            <div class="author">Prajwal</div>
+            <div><span id="element"></span></div>
+        </div>
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Graphic Designer', 'UI/UX Designer', 'Front-end Developer'],
+            typeSpeed: 50,
+            loop: true,
+        });
+    </script>
 </body>
 
 </html>

@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Car Price Predictor</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
 </head>
+
 <body>
     <div class="container">
         <h1>Car Price Predictor</h1>
@@ -43,6 +45,21 @@
 
             <button type="submit">Predict Price</button>
         </form>
+        <div class="credits">
+            <div class="made-by">Made by</div>
+            <div class="author">Prajwal</div>
+            <div><span id="element"></span></div>
+        </div>
     </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Graphic Designer', 'UI/UX Designer', 'Front-end Developer'],
+            typeSpeed: 50,
+            loop: true,
+        });
+    </script>
 </body>
+
 </html>
